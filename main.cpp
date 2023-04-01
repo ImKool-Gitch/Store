@@ -140,7 +140,6 @@ int main() {
 			while (!secret_quit) {
 				std::cout << ":... ";
 				std::cin >> secret_option;
-				std::cin.ignore();
 				switch (secret_option) {
 				case 1:
 					store.add_product();
