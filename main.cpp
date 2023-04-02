@@ -77,7 +77,8 @@ int main() {
 	std::cout << "6.Check out" << std::endl;
 	std::cout << "7.Check if your cart is empty or no" << std::endl;
 	std::cout << "8.Print the info of the current account" << std::endl;
-	std::cout << "9.Exit" << std::endl;
+	std::cout << "9.Print the menu options" << std::endl;
+	std::cout << "10.Exit" << std::endl;
 	while (!quit) {
 		std::cout << ":... ";
 		std::cin >> option;
@@ -129,6 +130,18 @@ int main() {
 			user.display_info();
 			break;
 		case 9:
+			std::cout << "1.Print the products in the store" << std::endl;
+			std::cout << "2.Check if a product is present in your cart" << std::endl;
+			std::cout << "3.Add a product in your cart" << std::endl;
+			std::cout << "4.Remove a product in your cart" << std::endl;
+			std::cout << "5.Display the contents in you cart" << std::endl;
+			std::cout << "6.Check out" << std::endl;
+			std::cout << "7.Check if your cart is empty or no" << std::endl;
+			std::cout << "8.Print the info of the current account" << std::endl;
+			std::cout << "9.Print the menu options" << std::endl;
+			std::cout << "10.Exit" << std::endl;
+			break;
+		case 10:
 			quit = true;
 			break;
 		case 69:
@@ -152,14 +165,12 @@ int main() {
 					break;
 				default:
 					std::cout << "Option doesnt exist" << std::endl;
-					break;
 				}
 			}
 			secret_quit = false;
 			break;
 		default:
 			std::cout << "Option doesnt exist" << std::endl;
-			break;
 		}
 	}
 	return 0;
